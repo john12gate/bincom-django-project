@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Posts</title>
+</head>
+<body>
+<h1>Blog Posts</h1>
+<ul>
+
+
+    {% for result in display_result %}
+    <li>{{ result.id }}</li>
+    <li>{{ result.agentname }}</li>
+    <li>{{ result.announced_lga_results }}</li>
+    <li>{{ result.announced_pu_results }}</li>
+    <li>{{ result.announced_state_results }}</li>
+    <li>{{ result.announced_ward_results }}</li>
+    <li>{{ result.lga }}</li>
+    <li>{{ result.party }}</li>
+    <li>{{ result.polling_unit }}</li>
+    <li>{{ result.states }}</li>
+    <li>{{ result.ward }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

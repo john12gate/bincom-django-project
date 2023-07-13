@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Local Government Results</title>
+</head>
+<body>
+<h1>Select Local Government</h1>
+<form method="GET">
+    <select name="lga_id" onchange="this.form.submit()">
+        <option value="">-- Select Local Government --</option>
+        {% for local_government in local_governments %}
+        <option value="{{ local_government.lga_id }}">{{ local_government.lga_id }}</option>
+        {% endfor %}
+    </select>
+</form>
+
+{% if total_results %}
+<h2>Total Results for Local Government {{ selected_lga }}</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Field</th>
+        <th>Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Field 1</td>
+        <td>{{ total_results.field1 }}</td>
+    </tr>
+    <tr>
+        <td>Field 2</td>
+        <td>{{ total_results.field2 }}</td>
+    </tr>
+    <!-- Add more rows for additional fields -->
+    </tbody>
+</table>
+{% endif %}
+</body>
+</html>

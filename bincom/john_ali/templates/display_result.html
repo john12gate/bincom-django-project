@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bincom Models</title>
+</head>
+<body>
+<h1>Bincom Models</h1>
+<ul>
+    {% for bincom_model in bincom_models %}
+
+    <li>{{ bincom_model.agentname }}</li>
+    <li>{{ bincom_model.announced_lga_results }}</li>
+    <li>{{ bincom_model.announced_pu_results }}</li>
+    <li>{{ bincom_model.announced_state_results }}</li>
+    <li>{{ bincom_model.announced_ward_results }}</li>
+    <li>{{ bincom_model.lga }}</li>
+    <li>{{ bincom_model.party }}</li>
+    <li>{{ bincom_model.polling_unit }}</li>
+    <li>{{ bincom_model.states }}</li>
+    <li>{{ bincom_model.ward }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
+
+
+
+

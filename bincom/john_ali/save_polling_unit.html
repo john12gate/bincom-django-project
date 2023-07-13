@@ -1,0 +1,41 @@
+<form method="POST" action="{% url 'save_polling_unit' %}">
+    {% csrf_token %}
+
+    <label for="polling_unit_id">Polling Unit ID:</label>
+    <input type="text" name="polling_unit_id"><br>
+
+    <label for="ward_id">Ward ID:</label>
+    <input type="text" name="ward_id"><br>
+
+    <label for="lga_id">LGA ID:</label>
+    <input type="text" name="lga_id"><br>
+
+    <label for="uniquewardid">Unique Ward ID:</label>
+    <input type="text" name="uniquewardid"><br>
+
+    <label for="polling_unit_number">Polling Unit Number:</label>
+    <input type="text" name="polling_unit_number"><br>
+
+    <label for="polling_unit_name">Polling Unit Name:</label>
+    <input type="text" name="polling_unit_name"><br>
+
+    <label for="polling_unit_description">Polling Unit Description:</label>
+    <input type="text" name="polling_unit_description"><br>
+
+    <label for="lat">Latitude:</label>
+    <input type="text" name="lat"><br>
+
+    <label for="long">Longitude:</label>
+    <input type="text" name="long"><br>
+
+    <label for="entered_by_user">Entered by User:</label>
+    <input type="text" name="entered_by_user"><br>
+
+    <label for="date_entered">Date Entered:</label>
+    <input type="text" name="date_entered"><br>
+
+    <label for="user_ip_address">User IP Address:</label>
+    <input type="text" name="user_ip_address"><br>
+
+    <input type="submit" value="Submit">
+</form>

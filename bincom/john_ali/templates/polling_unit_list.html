@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Polling Units List</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Field 1</th>
+        <th>Field 2</th>
+        <!-- Add more table headers for additional fields -->
+    </tr>
+    </thead>
+    <tbody>
+    {% for polling_unit in polling_units %}
+    <tr>
+        <td>{{ polling_unit.field1 }}</td>
+        <td>{{ polling_unit.field2 }}</td>
+        <!-- Add more table cells for additional fields -->
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
